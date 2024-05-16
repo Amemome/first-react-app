@@ -8,12 +8,18 @@
     <script>
         const root = document.getElementById("root");
         const span = React.createElement("h3",{
+            id: "title",
             onMouseEnter: () => console.log("mouseenter")
         },"hello i'm span");
         const button = React.createElement("button",{
             onClick: () => console.log('i;n clicked'),
+            style: {
+                backgroundColor: "tomato",
+            },
         },"lcick me");
         const container = React.createElement("div",null,[span,button]);
+
+        
         ReactDOM.render(container, root);
     </script>
 
